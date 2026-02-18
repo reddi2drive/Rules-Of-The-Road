@@ -650,34 +650,1072 @@ const QS_PER_ATTEMPT_DEFAULT = 71;
 
 const QUESTION_BANK = [
 {
-  id: "template-0001",
-  category: "Template – Example",
-  q: "This is an example question used in the template.",
+  id: "rules-001",
+  category: "Rules Of The Road",
+  q: "What must you do when parking at night on a road with a speed limit above 30 mph?",
   choices: [
-    "Example answer A",
-    "Example answer B",
-    "Example answer C",
-    "Example answer D"
+    "Park facing oncoming traffic",
+    "Leave your parking lights switched on",
+    "Leave dipped headlights switched on",
+    "Park close to a junction"
+  ],
+  correct: 1,
+  explain: "When parking at night on a road with a speed limit over 30 mph, you must leave your parking lights on. Always park in the direction of traffic flow and not close to a junction.",
+  image: "",
+  fp: "R2D-RULES-001"
+},
+
+{
+  id: "rules-002",
+  category: "Rules Of The Road",
+  q: "What is the national speed limit for cars and motorcycles on a single carriageway?",
+  choices: [
+    "30 mph",
+    "50 mph",
+    "60 mph",
+    "70 mph"
+  ],
+  correct: 2,
+  explain: "The national speed limit for cars and motorcycles on a single carriageway is 60 mph, unless signs indicate otherwise.",
+  image: "",
+  fp: "R2D-RULES-002"
+},
+
+{
+  id: "rules-003",
+  category: "Rules Of The Road",
+  q: "When should you use the right-hand lane on a two-lane dual carriageway?",
+  choices: [
+    "When overtaking or turning right",
+    "When passing a side road on the left",
+    "When travelling at a constant high speed",
+    "When staying at the minimum speed"
   ],
   correct: 0,
-  explain: "This is an example explanation showing where feedback text goes.",
+  explain: "Normally you should travel in the left-hand lane. Use the right-hand lane only for overtaking or turning right, and return to the left when safe.",
   image: "",
-  fp: "R2D-TEMPLATE-0001"
+  fp: "R2D-RULES-003"
+},
+
+{
+  id: "rules-004",
+  category: "Rules Of The Road",
+  q: "In England, Scotland and Northern Ireland, how is a 30 mph speed limit usually indicated where there are no speed-limit signs?",
+  choices: [
+    "By hazard warning lines",
+    "By street lighting",
+    "By pedestrian islands",
+    "By double yellow lines"
+  ],
+  correct: 1,
+  explain: "Street lighting generally indicates a 30 mph speed limit unless signs show otherwise.",
+  image: "",
+  fp: "R2D-RULES-004"
+},
+
+{
+  id: "rules-005",
+  category: "Rules Of The Road",
+  q: "What should you do if there is an obstruction on your side of the road?",
+  choices: [
+    "Continue because you have priority",
+    "Give way to oncoming traffic",
+    "Wave oncoming traffic through",
+    "Accelerate to pass first"
+  ],
+  correct: 1,
+  explain: "If there isn’t enough room for both vehicles to pass safely, you must give way to oncoming traffic.",
+  image: "",
+  fp: "R2D-RULES-005"
+},
+
+{
+  id: "rules-006",
+  category: "Rules Of The Road",
+  q: "What is the closest distance you may park to a junction (except in an authorised parking space)?",
+  choices: [
+    "10 metres (32 feet)",
+    "12 metres (39 feet)",
+    "15 metres (49 feet)",
+    "20 metres (66 feet)"
+  ],
+  correct: 0,
+  explain: "You must not park within 10 metres of a junction unless in a designated parking place.",
+  image: "",
+  fp: "R2D-RULES-006"
+},
+
+{
+  id: "rules-007",
+  category: "Rules Of The Road",
+  q: "When may you stop and wait in a yellow box junction?",
+  choices: [
+    "When oncoming traffic prevents you from turning right",
+    "When queuing to turn left",
+    "When queuing to go straight ahead",
+    "When on a roundabout"
+  ],
+  correct: 0,
+  explain: "You may only wait in a box junction when turning right and your exit is clear but blocked by oncoming traffic.",
+  image: "",
+  fp: "R2D-RULES-007"
+},
+
+{
+  id: "rules-008",
+  category: "Rules Of The Road",
+  q: "On a motorway in England, when must you stop your vehicle?",
+  choices: [
+    "When told by a roadworks supervisor",
+    "When signalled by a traffic officer",
+    "When asked by a pedestrian",
+    "When signalled by another driver"
+  ],
+  correct: 1,
+  explain: "You must obey instructions given by traffic officers on motorways and certain primary routes.",
+  image: "",
+  fp: "R2D-RULES-008"
+},
+
+{
+  id: "rules-009",
+  category: "Rules Of The Road",
+  q: "If you realise you are travelling in the wrong direction on a busy main road, what should you do?",
+  choices: [
+    "Turn into a side road and reverse back",
+    "Make a U-turn immediately",
+    "Carry out a three-point turn",
+    "Turn around in a quiet side road"
+  ],
+  correct: 3,
+  explain: "Do not turn around in a busy road. Find a safe, quiet place to turn around without causing danger.",
+  image: "",
+  fp: "R2D-RULES-009"
+},
+
+{
+  id: "rules-010",
+  category: "Rules Of The Road",
+  q: "What should you do if you're unsure whether it’s safe to reverse?",
+  choices: [
+    "Sound your horn",
+    "Rev your engine",
+    "Get out and check",
+    "Reverse slowly anyway"
+  ],
+  correct: 2,
+  explain: "If you cannot see clearly all around your vehicle, get out and check before reversing.",
+  image: "",
+  fp: "R2D-RULES-010"
+},
+
+{
+  id: "rules-011",
+  category: "Rules Of The Road",
+  q: "When turning right at a box junction with oncoming traffic, what may you do?",
+  choices: [
+    "Wait in the box if your exit is clear",
+    "Wait before the junction until all traffic clears",
+    "Drive through without turning",
+    "Enter only if signalled by others"
+  ],
+  correct: 0,
+  explain: "You may wait in the box junction if your exit road is clear but oncoming traffic prevents you from completing the turn.",
+  image: "",
+  fp: "R2D-RULES-011"
+},
+
+{
+  id: "rules-012",
+  category: "Rules Of The Road",
+  q: "Which type of vehicle may need to take a different line at a roundabout?",
+  choices: [
+    "Sports car",
+    "Van",
+    "Estate car",
+    "Long vehicle"
+  ],
+  correct: 3,
+  explain: "Long vehicles may need extra space and may straddle lanes to avoid mounting the kerb.",
+  image: "",
+  fp: "R2D-RULES-012"
+},
+
+{
+  id: "rules-013",
+  category: "Rules Of The Road",
+  q: "If you're unsure whether it's safe to overtake a tractor, what should you do?",
+  choices: [
+    "Follow another vehicle overtaking",
+    "Sound your horn to move it aside",
+    "Speed past quickly",
+    "Stay behind if in doubt"
+  ],
+  correct: 3,
+  explain: "Never overtake unless you can clearly see that it’s safe. If in doubt, stay behind.",
+  image: "",
+  fp: "R2D-RULES-013"
+},
+
+{
+  id: "rules-014",
+  category: "Rules Of The Road",
+  q: "If you realise at the last moment you are in the wrong lane at a junction, what should you do?",
+  choices: [
+    "Continue in that lane",
+    "Force your way into the correct lane",
+    "Stop until traffic clears",
+    "Use arm signals to change lanes"
+  ],
+  correct: 0,
+  explain: "Do not cut across traffic. Continue safely in your lane and find another route if needed.",
+  image: "",
+  fp: "R2D-RULES-014"
+},
+
+{
+  id: "rules-015",
+  category: "Rules Of The Road",
+  q: "When are you allowed to drive over a pavement?",
+  choices: [
+    "To overtake traffic",
+    "If it is wide enough",
+    "If no pedestrians are present",
+    "To access a property"
+  ],
+  correct: 3,
+  explain: "It is illegal to drive on a pavement except to access a property. Always give priority to pedestrians.",
+  image: "",
+  fp: "R2D-RULES-015"
+},
+
+{
+  id: "rules-016",
+  category: "Rules Of The Road",
+  q: "In England, Scotland and Northern Ireland, what speed limit usually applies where there are street lights but no signs?",
+  choices: [
+    "30 mph",
+    "40 mph",
+    "50 mph",
+    "60 mph"
+  ],
+  correct: 0,
+  explain: "Street lights usually indicate a 30 mph speed limit unless signs show otherwise.",
+  image: "",
+  fp: "R2D-RULES-016"
+},
+
+{
+  id: "rules-017",
+  category: "Rules Of The Road",
+  q: "If you see a sign indicating the right-hand lane is closed 800 yards ahead, what should you do?",
+  choices: [
+    "Stay in the lane until the queue",
+    "Move left immediately",
+    "Wait to see which lane moves faster",
+    "Move left in good time"
+  ],
+  correct: 3,
+  explain: "Change lanes in good time when directed by signs. Do not wait until the last moment.",
+  image: "",
+  fp: "R2D-RULES-017"
+},
+
+{
+  id: "rules-018",
+  category: "Rules Of The Road",
+  q: "If the only available parking spaces are marked for disabled drivers and you are not eligible, what should you do?",
+  choices: [
+    "Use one of the spaces",
+    "Park but remain with your vehicle",
+    "Use one as long as one stays free",
+    "Wait for a regular space"
+  ],
+  correct: 3,
+  explain: "You must not park in disabled spaces unless authorised. Wait for a suitable space.",
+  image: "",
+  fp: "R2D-RULES-018"
+},
+
+{
+  id: "rules-019",
+  category: "Rules Of The Road",
+  q: "If a cycle lane is marked with a solid white line and is in operation, what must car drivers do?",
+  choices: [
+    "Park in it if necessary",
+    "Drive in it at any time",
+    "Use it when required",
+    "Not drive in it"
+  ],
+  correct: 3,
+  explain: "You must not drive or park in a cycle lane marked with a solid white line during its hours of operation.",
+  image: "",
+  fp: "R2D-RULES-019"
+},
+
+{
+  id: "rules-020",
+  category: "Rules Of The Road",
+  q: "When may you enter a yellow box junction?",
+  choices: [
+    "When fewer than two vehicles are ahead",
+    "When signalled by another driver",
+    "When your exit road is clear",
+    "When traffic signs instruct you"
+  ],
+  correct: 2,
+  explain: "You must not enter a box junction unless your exit road is clear. An exception applies when turning right and blocked by oncoming traffic.",
+  image: "",
+  fp: "R2D-RULES-020"
 },
  {
-  id: "template-0002",
-  category: "Template – Example",
-  q: "This is an example question used in the template.",
+  id: "rules-021",
+  category: "Rules Of The Road",
+  q: "How should you signal when going straight ahead at a roundabout?",
   choices: [
-    "Example answer A",
-    "Example answer B",
-    "Example answer C",
-    "Example answer D"
+    "Signal right on approach and left to leave",
+    "Signal left after leaving the roundabout",
+    "Signal right and keep it on",
+    "Signal left just after passing the exit before yours"
+  ],
+  correct: 3,
+  explain: "When going straight ahead, you normally do not signal on approach. Signal left just after passing the exit before the one you intend to take.",
+  image: "",
+  fp: "R2D-RULES-021"
+},
+
+{
+  id: "rules-022",
+  category: "Rules Of The Road",
+  q: "At a pelican crossing, what does a flashing amber light mean?",
+  choices: [
+    "Give way to pedestrians still on the crossing",
+    "Move off immediately",
+    "Wait for the green light",
+    "Prepare to move when amber becomes steady"
   ],
   correct: 0,
-  explain: "This is an example explanation showing where feedback text goes.",
+  explain: "Flashing amber means you may proceed only if the crossing is clear. You must give way to pedestrians still crossing.",
   image: "",
-  fp: "R2D-TEMPLATE-0002"
+  fp: "R2D-RULES-022"
+},
+
+{
+  id: "rules-023",
+  category: "Rules Of The Road",
+  q: "When turning left from a main road into a side road, how should you position your vehicle?",
+  choices: [
+    "Keep slightly right of centre",
+    "Stay in the middle of the road",
+    "Swing out to the right before turning",
+    "Keep well to the left"
+  ],
+  correct: 3,
+  explain: "Positioning close to the left helps other road users understand your intention and avoids obstructing oncoming traffic.",
+  image: "",
+  fp: "R2D-RULES-023"
+},
+
+{
+  id: "rules-024",
+  category: "Rules Of The Road",
+  q: "What does a cycle lane marked with a broken white line mean?",
+  choices: [
+    "You must not enter it at any time",
+    "There is a reduced speed limit",
+    "Cyclists travel both directions",
+    "You should avoid using it unless necessary"
+  ],
+  correct: 3,
+  explain: "If the line is broken, you should not drive or park in the lane unless it is unavoidable.",
+  image: "",
+  fp: "R2D-RULES-024"
+},
+
+{
+  id: "rules-025",
+  category: "Rules Of The Road",
+  q: "When may you park on a road marked with double white lines?",
+  choices: [
+    "If the line nearest you is broken",
+    "When there are no yellow lines",
+    "To pick up or set down passengers",
+    "During daylight only"
+  ],
+  correct: 2,
+  explain: "You must not park or stop on double white lines except to pick up or set down passengers.",
+  image: "",
+  fp: "R2D-RULES-025"
+},
+
+{
+  id: "rules-026",
+  category: "Rules Of The Road",
+  q: "What is the maximum speed for a car towing a trailer on a single carriageway?",
+  choices: [
+    "30 mph",
+    "40 mph",
+    "50 mph",
+    "60 mph"
+  ],
+  correct: 2,
+  explain: "Cars towing trailers are limited to 50 mph on single carriageways.",
+  image: "",
+  fp: "R2D-RULES-026"
+},
+
+{
+  id: "rules-027",
+  category: "Rules Of The Road",
+  q: "Which vehicle is most likely to take an unusual position at a roundabout?",
+  choices: [
+    "Estate car",
+    "Taxi",
+    "Delivery van",
+    "Long vehicle"
+  ],
+  correct: 3,
+  explain: "Long vehicles may need extra room and may straddle lanes to avoid mounting the kerb.",
+  image: "",
+  fp: "R2D-RULES-027"
+},
+
+{
+  id: "rules-028",
+  category: "Rules Of The Road",
+  q: "When going straight ahead at a roundabout, what signal should you give?",
+  choices: [
+    "Signal left before leaving the roundabout",
+    "Do not signal at any time",
+    "Signal right on approach",
+    "Signal left on approach"
+  ],
+  correct: 0,
+  explain: "Signal left just after passing the exit before yours to show you are leaving the roundabout.",
+  image: "",
+  fp: "R2D-RULES-028"
+},
+
+{
+  id: "rules-029",
+  category: "Rules Of The Road",
+  q: "If a train has passed at a level crossing but the red lights continue flashing, what must you do?",
+  choices: [
+    "Proceed carefully",
+    "Phone the signal operator",
+    "Edge forward to look",
+    "Continue waiting"
+  ],
+  correct: 3,
+  explain: "Flashing red lights mean stop. Another train may be approaching.",
+  image: "",
+  fp: "R2D-RULES-029"
+},
+
+{
+  id: "rules-030",
+  category: "Rules Of The Road",
+  q: "What is the national speed limit for cars and motorcycles on a dual carriageway?",
+  choices: [
+    "30 mph",
+    "50 mph",
+    "60 mph",
+    "70 mph"
+  ],
+  correct: 3,
+  explain: "The national speed limit for cars and motorcycles on dual carriageways is 70 mph unless signs indicate otherwise.",
+  image: "",
+  fp: "R2D-RULES-030"
+},
+
+{
+  id: "rules-031",
+  category: "Rules Of The Road",
+  q: "What should you do if warning lights at a level crossing keep flashing after a train has passed?",
+  choices: [
+    "Investigate the crossing",
+    "Call the signal operator",
+    "Continue to wait",
+    "Drive across carefully"
+  ],
+  correct: 2,
+  explain: "You must continue waiting. Another train may be coming.",
+  image: "",
+  fp: "R2D-RULES-031"
+},
+
+{
+  id: "rules-032",
+  category: "Rules Of The Road",
+  q: "If amber lights and a warning sound activate while you are driving over a level crossing, what should you do?",
+  choices: [
+    "Stop immediately",
+    "Reverse back",
+    "Continue and clear the crossing",
+    "Turn on hazard lights"
+  ],
+  correct: 2,
+  explain: "If already on the crossing when the warning activates, continue and clear it. Do not stop on the crossing.",
+  image: "",
+  fp: "R2D-RULES-032"
+},
+
+{
+  id: "rules-033",
+  category: "Rules Of The Road",
+  q: "Where may you overtake on a one-way street?",
+  choices: [
+    "Only on the left",
+    "Overtaking is not allowed",
+    "Only on the right",
+    "On either side"
+  ],
+  correct: 3,
+  explain: "You may overtake on either side in a one-way street if it is safe to do so.",
+  image: "",
+  fp: "R2D-RULES-033"
+},
+
+{
+  id: "rules-034",
+  category: "Rules Of The Road",
+  q: "What does a sign indicating the end of a controlled parking zone mean?",
+  choices: [
+    "No through road",
+    "End of traffic-calming zone",
+    "Free parking zone ends",
+    "End of controlled parking restrictions"
+  ],
+  correct: 3,
+  explain: "This sign indicates you are leaving a controlled parking zone and its restrictions no longer apply.",
+  image: "",
+  fp: "R2D-RULES-034"
+},
+
+{
+  id: "rules-035",
+  category: "Rules Of The Road",
+  q: "Where is the safest place to park your vehicle?",
+  choices: [
+    "Near a bus stop",
+    "In a designated parking space",
+    "Near the brow of a hill",
+    "On the approach to a level crossing"
+  ],
+  correct: 1,
+  explain: "Always park in a designated parking space where possible to avoid causing danger or obstruction.",
+  image: "",
+  fp: "R2D-RULES-035"
+},
+
+{
+  id: "rules-036",
+  category: "Rules Of The Road",
+  q: "Who has priority at an unmarked crossroads?",
+  choices: [
+    "The larger vehicle",
+    "No-one automatically",
+    "The faster vehicle",
+    "The smaller vehicle"
+  ],
+  correct: 1,
+  explain: "No one has automatic priority. Proceed carefully only when it is safe.",
+  image: "",
+  fp: "R2D-RULES-036"
+},
+
+{
+  id: "rules-037",
+  category: "Rules Of The Road",
+  q: "What must you do if temporary speed limits are displayed at roadworks?",
+  choices: [
+    "Obey the limit",
+    "Only obey during rush hour",
+    "Ignore it",
+    "Treat it as advisory"
+  ],
+  correct: 0,
+  explain: "Temporary speed limits at roadworks are mandatory and must be obeyed.",
+  image: "",
+  fp: "R2D-RULES-037"
+},
+
+{
+  id: "rules-038",
+  category: "Rules Of The Road",
+  q: "When must you stop your vehicle?",
+  choices: [
+    "If involved in an incident causing damage or injury",
+    "At give-way lines",
+    "At the end of a one-way street",
+    "Before joining a motorway"
+  ],
+  correct: 0,
+  explain: "You must stop if involved in a collision causing injury or damage, or when instructed by authorised persons or signals.",
+  image: "",
+  fp: "R2D-RULES-038"
+},
+
+{
+  id: "rules-039",
+  category: "Rules Of The Road",
+  q: "What does the national speed limit sign mean?",
+  choices: [
+    "Local speed limit applies",
+    "No waiting",
+    "National speed limit applies",
+    "No entry"
+  ],
+  correct: 2,
+  explain: "The sign means the national speed limit for that type of road applies.",
+  image: "",
+  fp: "R2D-RULES-039"
+},
+
+{
+  id: "rules-040",
+  category: "Rules Of The Road",
+  q: "When may you park in a disabled parking bay?",
+  choices: [
+    "When you have a Blue Badge",
+    "When you use a wheelchair",
+    "When you hold an advanced driving certificate",
+    "When you drive an adapted vehicle"
+  ],
+  correct: 0,
+  explain: "Only Blue Badge holders may use disabled parking bays, and the badge must be clearly displayed.",
+  image: "",
+  fp: "R2D-RULES-040"
+},
+ {
+  id: "rules-041",
+  category: "Rules Of The Road",
+  q: "Where is the safest place to park your vehicle at night?",
+  choices: [
+    "Near a police station",
+    "In a quiet road",
+    "On a red route",
+    "In a well-lit area"
+  ],
+  correct: 3,
+  explain: "Parking in a well-lit area helps deter theft and makes your vehicle more visible to others.",
+  image: "",
+  fp: "R2D-RULES-041"
+},
+
+{
+  id: "rules-042",
+  category: "Rules Of The Road",
+  q: "When may you stop on a clearway?",
+  choices: [
+    "Never",
+    "When traffic is heavy",
+    "During rush hour",
+    "During daylight hours"
+  ],
+  correct: 0,
+  explain: "Stopping is not permitted on a clearway while it is in force, even to pick up or drop off passengers.",
+  image: "",
+  fp: "R2D-RULES-042"
+},
+
+{
+  id: "rules-043",
+  category: "Rules Of The Road",
+  q: "When should you use the right-hand lane of a three-lane dual carriageway?",
+  choices: [
+    "Only when overtaking",
+    "When overtaking or turning right",
+    "When using cruise control",
+    "Only when turning right"
+  ],
+  correct: 1,
+  explain: "The right-hand lane should normally be used only for overtaking or turning right.",
+  image: "",
+  fp: "R2D-RULES-043"
+},
+
+{
+  id: "rules-044",
+  category: "Rules Of The Road",
+  q: "A sign showing 30 with a red slash through it means what?",
+  choices: [
+    "Minimum speed 30 mph",
+    "End of maximum speed",
+    "End of minimum speed restriction",
+    "Maximum speed 30 mph"
+  ],
+  correct: 2,
+  explain: "A red slash through a sign means that restriction has ended. In this case, it was a minimum speed limit.",
+  image: "",
+  fp: "R2D-RULES-044"
+},
+
+{
+  id: "rules-045",
+  category: "Rules Of The Road",
+  q: "How far are you allowed to reverse?",
+  choices: [
+    "No further than necessary",
+    "No more than one car length",
+    "As far as needed to reverse around a corner",
+    "The length of a residential street"
+  ],
+  correct: 0,
+  explain: "You must not reverse further than is necessary and must always ensure it is safe.",
+  image: "",
+  fp: "R2D-RULES-045"
+},
+
+{
+  id: "rules-046",
+  category: "Rules Of The Road",
+  q: "Why can reversing from a side road into a main road be dangerous?",
+  choices: [
+    "Reverse sensors may activate",
+    "Your view will be restricted",
+    "Your reversing lights may be hidden",
+    "Your mirrors may need adjusting"
+  ],
+  correct: 1,
+  explain: "Your visibility will be limited and traffic on the main road may be moving quickly.",
+  image: "",
+  fp: "R2D-RULES-046"
+},
+
+{
+  id: "rules-047",
+  category: "Rules Of The Road",
+  q: "What does a sign indicating waiting restrictions mean?",
+  choices: [
+    "No entry",
+    "Waiting restrictions apply",
+    "National speed limit",
+    "School crossing patrol ahead"
+  ],
+  correct: 1,
+  explain: "Waiting restriction signs indicate limits on stopping or parking and will normally show the times they apply.",
+  image: "",
+  fp: "R2D-RULES-047"
+},
+
+{
+  id: "rules-048",
+  category: "Rules Of The Road",
+  q: "When reversing into a side road, when is your vehicle most hazardous to passing traffic?",
+  choices: [
+    "After completing the manoeuvre",
+    "Just before starting",
+    "After entering the side road",
+    "When the front swings out"
+  ],
+  correct: 3,
+  explain: "As you reverse, the front of your vehicle swings outward into the road and may obstruct traffic.",
+  image: "",
+  fp: "R2D-RULES-048"
+},
+
+{
+  id: "rules-049",
+  category: "Rules Of The Road",
+  q: "You see a sign showing controlled parking times. What must you do during those times?",
+  choices: [
+    "Park in a bay and not pay",
+    "Park on yellow lines and pay",
+    "Park on yellow lines without paying",
+    "Park in a marked bay and pay if required"
+  ],
+  correct: 3,
+  explain: "Controlled parking zones require you to follow the restrictions shown, including paying where required.",
+  image: "",
+  fp: "R2D-RULES-049"
+},
+
+{
+  id: "rules-050",
+  category: "Rules Of The Road",
+  q: "When may you park on the right-hand side of the road at night?",
+  choices: [
+    "In a one-way street",
+    "When sidelights are on",
+    "When more than 10 metres from a junction",
+    "When under a street light"
+  ],
+  correct: 0,
+  explain: "Normally you park on the left, but in a one-way street you may park on the right.",
+  image: "",
+  fp: "R2D-RULES-050"
+},
+
+{
+  id: "rules-051",
+  category: "Rules Of The Road",
+  q: "What is the safest way to turn around in a busy high street?",
+  choices: [
+    "Turn in a quiet side road",
+    "Reverse into the main road",
+    "Ask someone to stop traffic",
+    "Perform a U-turn"
+  ],
+  correct: 0,
+  explain: "Choose a quiet side road and turn safely without obstructing traffic.",
+  image: "",
+  fp: "R2D-RULES-051"
+},
+
+{
+  id: "rules-052",
+  category: "Rules Of The Road",
+  q: "Red and white markers before a concealed level crossing warn you of what?",
+  choices: [
+    "End of motorway",
+    "Concealed level crossing ahead",
+    "Hidden speed-limit sign",
+    "End of dual carriageway"
+  ],
+  correct: 1,
+  explain: "These markers give advance warning where a crossing may not be visible until the last moment.",
+  image: "",
+  fp: "R2D-RULES-052"
+},
+
+{
+  id: "rules-053",
+  category: "Rules Of The Road",
+  q: "When driving at night, when should you dip your headlights if another vehicle overtakes you?",
+  choices: [
+    "After it has fully passed",
+    "Before it starts to pass",
+    "Only if they dip theirs",
+    "As soon as it passes"
+  ],
+  correct: 3,
+  explain: "Dipping headlights prevents dazzling the driver in front once they have overtaken you.",
+  image: "",
+  fp: "R2D-RULES-053"
+},
+
+{
+  id: "rules-054",
+  category: "Rules Of The Road",
+  q: "When may you use a bus lane marked with specific operating times?",
+  choices: [
+    "Outside its hours of operation",
+    "To move ahead of traffic",
+    "Never",
+    "To overtake slow vehicles"
+  ],
+  correct: 0,
+  explain: "Bus lanes may be used by other vehicles outside the stated hours.",
+  image: "",
+  fp: "R2D-RULES-054"
+},
+
+{
+  id: "rules-055",
+  category: "Rules Of The Road",
+  q: "Other than indicators, how can you signal to drivers behind that you are slowing?",
+  choices: [
+    "Brake lights",
+    "Sidelights",
+    "Fog lights",
+    "Interior lights"
+  ],
+  correct: 0,
+  explain: "Brake lights automatically warn following drivers that you are slowing down.",
+  image: "",
+  fp: "R2D-RULES-055"
+},
+
+{
+  id: "rules-056",
+  category: "Rules Of The Road",
+  q: "When turning right onto a dual carriageway with a narrow central reservation, what should you do?",
+  choices: [
+    "Wait in the reservation",
+    "Wait until clear in both directions",
+    "Stop in the first lane",
+    "Edge out slightly"
+  ],
+  correct: 1,
+  explain: "If the reservation cannot contain your vehicle, treat it as one road and wait until both directions are clear.",
+  image: "",
+  fp: "R2D-RULES-056"
+},
+
+{
+  id: "rules-057",
+  category: "Rules Of The Road",
+  q: "What is the advantage of turning behind an oncoming vehicle when both are turning right at a crossroads?",
+  choices: [
+    "Clearer view of approaching traffic",
+    "Better fuel economy",
+    "More time to turn",
+    "No need to stop"
+  ],
+  correct: 0,
+  explain: "Turning behind gives you a better view of approaching traffic and is often safer.",
+  image: "",
+  fp: "R2D-RULES-057"
+},
+
+{
+  id: "rules-058",
+  category: "Rules Of The Road",
+  q: "Where is the safest place to park your vehicle at night if available?",
+  choices: [
+    "In a garage",
+    "On a busy road",
+    "In a quiet car park",
+    "Near a red route"
+  ],
+  correct: 0,
+  explain: "Parking in a garage reduces the risk of theft and damage.",
+  image: "",
+  fp: "R2D-RULES-058"
+},
+
+{
+  id: "rules-059",
+  category: "Rules Of The Road",
+  q: "On a narrow road with passing places, what should you do if a vehicle approaches?",
+  choices: [
+    "Use the passing place on your right",
+    "Force them to reverse",
+    "Use a passing place only if wider",
+    "Pull into the nearest passing place on your left"
+  ],
+  correct: 3,
+  explain: "Pull into the nearest passing place on the left. If it’s on the right, wait opposite it.",
+  image: "",
+  fp: "R2D-RULES-059"
+},
+
+{
+  id: "rules-060",
+  category: "Rules Of The Road",
+  q: "When may you stop on an urban clearway?",
+  choices: [
+    "To pick up or set down passengers",
+    "To use a mobile phone",
+    "To ask for directions",
+    "To load goods"
+  ],
+  correct: 0,
+  explain: "On an urban clearway you may stop only to pick up or set down passengers during its operating times.",
+  image: "",
+  fp: "R2D-RULES-060"
+},
+ {
+  id: "rules-061",
+  category: "Rules Of The Road",
+  q: "What should you do if you see a pedestrian waiting at a zebra crossing?",
+  choices: [
+    "Drive on quickly before they step out",
+    "Stop before the zigzag lines and let them cross",
+    "Be ready to slow down or stop to let them cross",
+    "Ignore them as they are still on the pavement"
+  ],
+  correct: 2,
+  explain: "If a pedestrian is waiting at a zebra crossing, you should be prepared to slow down or stop. Good observation gives you time to react safely.",
+  image: "",
+  fp: "R2D-RULES-061"
+},
+
+{
+  id: "rules-062",
+  category: "Rules Of The Road",
+  q: "What is the speed limit for a car towing a caravan on a dual carriageway?",
+  choices: [
+    "50 mph",
+    "40 mph",
+    "70 mph",
+    "60 mph"
+  ],
+  correct: 3,
+  explain: "Cars towing caravans or trailers are limited to 60 mph on dual carriageways and motorways. Extra care is needed due to increased weight and stability issues.",
+  image: "",
+  fp: "R2D-RULES-062"
+},
+
+{
+  id: "rules-063",
+  category: "Rules Of The Road",
+  q: "Who is authorised to signal you to stop?",
+  choices: [
+    "A motorcyclist",
+    "A pedestrian",
+    "A police officer",
+    "A bus driver"
+  ],
+  correct: 2,
+  explain: "You must obey signals given by police officers and authorised traffic officials. Failing to do so is an offence.",
+  image: "",
+  fp: "R2D-RULES-063"
+},
+
+{
+  id: "rules-064",
+  category: "Rules Of The Road",
+  q: "Why should you use dipped headlights at night in a well-lit built-up area?",
+  choices: [
+    "To see further ahead",
+    "To travel at higher speeds",
+    "To switch quickly to main beam",
+    "To ensure other road users can see you clearly"
+  ],
+  correct: 3,
+  explain: "Even on well-lit roads, dipped headlights help other road users see you more clearly.",
+  image: "",
+  fp: "R2D-RULES-064"
+},
+
+{
+  id: "rules-065",
+  category: "Rules Of The Road",
+  q: "When may you remove your seat belt while driving?",
+  choices: [
+    "When carrying out a manoeuvre that includes reversing",
+    "When moving off on a hill",
+    "When testing your brakes",
+    "When driving slowly in traffic"
+  ],
+  correct: 0,
+  explain: "You may remove your seat belt while performing a manoeuvre that includes reversing, but it must be worn again before normal driving resumes.",
+  image: "",
+  fp: "R2D-RULES-065"
+},
+
+{
+  id: "rules-066",
+  category: "Rules Of The Road",
+  q: "Which road users benefit from toucan crossings?",
+  choices: [
+    "Car drivers and motorcyclists",
+    "Cyclists and pedestrians",
+    "Bus and lorry drivers",
+    "Tram and train drivers"
+  ],
+  correct: 1,
+  explain: "Toucan crossings are designed for both pedestrians and cyclists. Cyclists are allowed to ride across when the green cycle symbol is shown.",
+  image: "",
+  fp: "R2D-RULES-066"
+},
+
+{
+  id: "rules-067",
+  category: "Rules Of The Road",
+  q: "When are you allowed to drive without wearing your seat belt?",
+  choices: [
+    "When reversing as part of a manoeuvre",
+    "When driving under 20 mph",
+    "When travelling in heavy traffic",
+    "When you feel uncomfortable"
+  ],
+  correct: 0,
+  explain: "Seat belts must be worn at all times except during manoeuvres that involve reversing. They must be fastened again before continuing normal driving.",
+  image: "",
+  fp: "R2D-RULES-067"
 }
 ];
 
